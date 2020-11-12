@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="address" class="com.NATE.pojo.Address">
+        <property name="address" value="成都"/>
+    </bean>
+    <bean id="student" class="com.NATE.pojo.Student">
+
+        <!-- 第一种，普通值注入，value-->
+        <property name="name" value="小卷"/>
+
+        <!-- 第二种，Bean注入，ref-->
+        <property name="address" ref="address"/>
+
+        <!-- 数组 -->
+        <property name="books">
+            <array>
+                <value>达摩流浪者</value>
+                <value>刀锋</value>
+                <value>一声所寻不过爱与自由</value>
+                <value>月亮与六便士</value>
+                <value>狂人日记</value>
+            </array>
+        </property>
+
+        <!-- list -->
+        <property name="hobbys">
+            <list>
+                <value>骑马</value>
+                <value>射箭</value>
+                <value>唱歌</value>
+                <value>跳舞</value>
+            </list>
+        </property>
+
+        <!-- Map -->
+        <property name="card">
+            <map>
+                <entry key="身份证" value="5123215215213"/>
+                <entry key="银行卡" value="9364796441"/>
+                <entry key="学生卡" value="33259654112"/>
+                <entry key="信用卡" value="799856314"/>
+            </map>
+        </property>
+
+        <!-- Set -->
+        <property name="games">
+            <set>
+                <value>LOL</value>
+                <value>GTA</value>
+                <value>WOW</value>
+            </set>
+        </property>
+
+        <!-- null -->
+        <property name="wife">
+            <null></null>
+        </property>
+
+        <!-- Properties -->
+        <property name="info">
+            <props>
+                <prop key="driver">aaddd</prop>
+                <prop key="url">wweee</prop>
+                <prop key="passwd">123456</prop>
+                <prop key="username">mmkk</prop>
+            </props>
+        </property>
+
+    </bean>
+
+</beans>

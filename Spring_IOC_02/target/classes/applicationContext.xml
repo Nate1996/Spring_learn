@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <!--<bean id="user" class="com.NATE.pojo.User">
+        <property name="Name" value="Nate"/>
+    </bean>-->
+
+    <!-- 使用有参构造创建对象的三种方式-->
+
+    <!-- 第一种根据index参数下标设置 -->
+   <!-- <bean id="user" class="com.NATE.pojo.User">-->
+   <!--     <constructor-arg index="0" value="Nate"/>-->
+   <!-- </bean>-->
+
+    <!-- 第二种根据参数名字设置 -->
+    <bean id="user" class="com.NATE.pojo.User">
+        <constructor-arg name="name" value="Nate"/>
+    </bean>
+
+    <!-- 第三种根据参数类型设置 -->
+    <!-- 不建议使用！ -->
+<!--  <bean id="user" class="com.NATE.pojo.User">-->
+<!--       <constructor-arg type="java.lang.String" value="Nate"  />-->
+<!--    </bean>-->
+
+  <alias name="user" alias="user2"  />
+
+</beans>
