@@ -3,10 +3,10 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<!-- 绑定接口 -->
+
 <mapper namespace="com.NATE.mapper.UserMapper">
 
-    <select id="selectUser" resultType="User">
-        select * from mybatis.t_customer
+    <select id="selectUser" resultType="user">
+        select * from user
     </select>
 </mapper>
