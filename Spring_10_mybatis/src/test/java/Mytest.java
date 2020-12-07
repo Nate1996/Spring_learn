@@ -14,7 +14,7 @@ public class Mytest {
 
     @Test
     public void test() throws IOException {
-        String resources = "mybatis-config.xml";
+         String resources = "mybatis-config.xml";
         Reader reader = Resources.getResourceAsReader(resources);
         SqlSessionFactory sessionFactory = new SqlSessionFactoryBuilder().build(reader);
         SqlSession sqlSession = sessionFactory.openSession(true);
