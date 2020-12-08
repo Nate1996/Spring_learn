@@ -15,6 +15,7 @@
         <module name="Spring_04_DI" />
         <module name="Spring_07_appconfig" />
         <module name="Spring_10_mybatis" />
+        <module name="Spring_11_transaction" />
         <module name="Spring_09_AOP" />
       </profile>
     </annotationProcessing>
