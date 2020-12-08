@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="mybatis-migrations-3.2.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../mvn/MyLocalRepository/org/mybatis/mybatis-migrations/3.2.1/mybatis-migrations-3.2.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
